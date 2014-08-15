@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.img-zoom-box{overflow:hidden;cursor:crosshair;}
+.img-zoom-box img{width:100%;}
+</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="img-zoom-box">
+		<img src="images/WB_RB.jpg" >
+	</div>
+</div>
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(document).ready(function() {
+	
+	$(".img-zoom-box").imgZoom();
+
+});
+</script>
+</html>
